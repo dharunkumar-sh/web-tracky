@@ -13,7 +13,7 @@ const Dashboard = () => {
       {/* Empty State */}
       <div>
         {websiteList.length === 0 && (
-          <div className="flex flex-col items-center justify-center p-4 p-8 border-2 border-dashed border-gray-300 rounded-lg mt-5">
+          <div className="flex flex-col items-center justify-center gap-4 p-8 border-2 border-dashed border-gray-300 rounded-lg mt-5">
             <img
               src="/empty-state.png"
               alt="Empty State"
@@ -22,7 +22,7 @@ const Dashboard = () => {
             <p className="mt-4 text-gray-500">
               You haven't added any websites yet.
             </p>
-            <Button className='mt-4'>+ Website</Button>
+            <Button>+ Website</Button>
           </div>
         )}
       </div>
